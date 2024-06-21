@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vinaya-53/fi-chatbot.git/static/css/main.36fec054.css",
+    "main.js": "/vinaya-53/fi-chatbot.git/static/js/main.4786b745.js",
+    "index.html": "/vinaya-53/fi-chatbot.git/index.html",
+    "main.36fec054.css.map": "/vinaya-53/fi-chatbot.git/static/css/main.36fec054.css.map",
+    "main.4786b745.js.map": "/vinaya-53/fi-chatbot.git/static/js/main.4786b745.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36fec054.css",
+    "static/js/main.4786b745.js"
+  ]
+}
