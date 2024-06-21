@@ -14,15 +14,15 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/vinaya-53/fi--chatbot.git",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
+  "homepage": "https://vinaya-53.github.io/fi--chatbot",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
