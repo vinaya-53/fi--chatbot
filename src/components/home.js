@@ -19,7 +19,7 @@ function HomePage() {
         const userMessage = { text: query, sender: 'user' };
         
         try {
-            const response = await axios.post('http://127.0.0.1:5000/chat', {
+            const response = await axios.post('https://your-backend-app-name.herokuapp.com/chat', {
                 message: query,
             });
             const botMessage = { text: response.data.response, sender: 'bot' };

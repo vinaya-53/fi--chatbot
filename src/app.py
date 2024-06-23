@@ -3,7 +3,7 @@ from flask_cors import CORS
 from chatbot import chatbot_response
 
 app = Flask(__name__)
-CORS(app)
+CORS(app,resources={r"/*": {"origins": ["https://finance-app-beta-umber.vercel.app/home"]}})
 
 @app.route('/chat', methods=['POST'])
 def chat():
