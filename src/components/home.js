@@ -19,7 +19,7 @@ function HomePage() {
         const userMessage = { text: query, sender: 'user' };
         
         try {
-            const response = await axios.post('https://chatbot-backend-nine.vercel.app', {
+            const response = await axios.post('https://chatbot-backend-nine.vercel.app/chat', {
                 message: query,
             });
             const botMessage = { text: response.data.response, sender: 'bot' };
