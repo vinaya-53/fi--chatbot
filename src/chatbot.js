@@ -10,7 +10,7 @@ function Chatbot() {
     setMessages([...messages, userMessage]);
 
     try {
-      const response = await axios.post('https://vercel.com/neptos-projects-a4a06739/chatbot-backend/Az6n2GhgotZq8qtbpVzwUvFo4pjX', {
+      const response = await axios.post('https://chatbot-backend-nine.vercel.app/chat', {
         message: input,
       });
       const botMessage = { text: response.data.response, sender: 'bot' };
