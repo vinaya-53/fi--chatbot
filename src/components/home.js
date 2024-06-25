@@ -19,9 +19,15 @@ function HomePage() {
         const userMessage = { text: query, sender: 'user' };
         
         try {
-            const response = await axios.post('chatbot-backend-h436njllu-neptos-projects-a4a06739.vercel.app/chat', {
+            const axiosConfig = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Origin': 'https://finance-app-beta-umber.vercel.app' // Ensure this matches exactly
+                }
+            };
+            const response = await axios.post('https://chatbot-backend-nine.vercel.app/chat', {
                 message: query,
-            });
+            }, axiosConfig);
             const botMessage = { text: response.data.response, sender: 'bot' };
             
             // Update state with both messages at once
