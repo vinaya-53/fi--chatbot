@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './chatbot.css'; // Import the CSS file
-
+const axiosConfig = {
+    headers: {
+        'Content-Type': 'application/json',
+        'Origin': 'https://finance-app-beta-umber.vercel.app'
+    }
+};
 function HomePage() {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
@@ -22,7 +27,7 @@ function HomePage() {
             
             const response = await axios.post('https://chatbot-backend-nine.vercel.app/chat', {
                 message: query,
-            });
+            }, axiosConfig);
             const botMessage = { text: response.data.response, sender: 'bot' };
             
             // Update state with both messages at once
