@@ -4,7 +4,6 @@ import './chatbot.css'; // Import the CSS file
 const axiosConfig = {
     headers: {
         'Content-Type': 'application/json',
-        'Origin': 'https://finance-app-beta-umber.vercel.app'
     }
 };
 function HomePage() {
