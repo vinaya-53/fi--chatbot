@@ -23,7 +23,7 @@ function Login({ onLogin }) {
 
   const signUp = async () => {
     try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      await createUserWithEmailAndPassword(auth, email, password);
       console.log('Successfully signed up');
       history.push('./');
     } catch (error) {

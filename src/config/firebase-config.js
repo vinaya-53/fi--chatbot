@@ -3,7 +3,6 @@ import 'firebase/compat/firestore';
 import { initializeApp } from "firebase/app";
 import {getAuth,GoogleAuthProvider} from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
-import { get} from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: "AIzaSyByeQrLwVNoW_V2ElJ9R_w-ma7LBG8XETA",

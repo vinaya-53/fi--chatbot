@@ -24,7 +24,7 @@ function HomePage() {
         
         try {
             
-            const response = await axios.post('https://chatbot-backend-nine.vercel.app/chat', {
+            const response = await axios.post('http://127.0.0.1:5000/chat', {
                 message: query,
             }, axiosConfig);
             const botMessage = { text: response.data.response, sender: 'bot' };
