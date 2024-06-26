@@ -1,9 +1,22 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "chatbot-backend/app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    },
+    {
+      "src": "public/*",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/backend/chatbot.py"
+      "src": "/chat",
+      "dest": "/chatbot-backend/app.py"
     },
     {
       "src": "/(.*)",
@@ -11,3 +24,4 @@
     }
   ]
 }
+
