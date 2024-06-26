@@ -3,6 +3,7 @@ import axios from 'axios';
 import './chatbot.css'; // Import the CSS file
 const axiosConfig = {
     headers: {
+        'AccessToken': user.msAccessToken,
         'Content-Type': 'application/json',
     }
 };
