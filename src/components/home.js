@@ -6,7 +6,6 @@ const axiosConfig = {
         'Content-Type': 'application/json',
     }
 };
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 function HomePage() {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
@@ -24,7 +23,7 @@ function HomePage() {
         const userMessage = { text: query, sender: 'user' };
 
         try {
-            const response = await axios.post(`${BACKEND_URL}/chat`, {
+            const response = await axios.post(`https://cors-anywhere-opal-delta.vercel.app/https://chatbot-backend-nine.vercel.app/chat`, {
                 message: query,
             }, axiosConfig);
             const botMessage = { text: response.data.response, sender: 'bot' };
