@@ -23,7 +23,7 @@ function HomePage() {
         const userMessage = { text: query, sender: 'user' };
 
         try {
-            const response = await axios.post(`https://cors-anywhere-opal-delta.vercel.app/https://chatbot-backend-nine.vercel.app/chat`, {
+            const response = await axios.post(`https://chatbot-backend-nine.vercel.app/chat`, {
                 message: query,
             }, axiosConfig);
             const botMessage = { text: response.data.response, sender: 'bot' };
