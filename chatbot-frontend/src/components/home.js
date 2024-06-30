@@ -26,7 +26,7 @@ function HomePage() {
         const userMessage = { text: query, sender: 'user' };
 
         try {
-            const response = await axios.post('https://chatbot-backend-naxsssmaa-neptos-projects-a4a06739.vercel.app/chat', {
+            const response = await axios.post('/api/chat', {
                 message: query,
             }, axiosConfig);
             const botMessage = { text: response.data.response, sender: 'bot' };
